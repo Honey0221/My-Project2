@@ -17,12 +17,13 @@ import java.time.LocalDateTime;
 public class Account extends BaseEntity {
     @ManyToOne
     private AccountUser accountUser;
+
     private String accountNumber;
 
     @Enumerated(EnumType.STRING)
     private AccountStatus accountStatus;
-    private Long balance;
 
+    private Long balance;
     private LocalDateTime registeredAt;
     private LocalDateTime unRegisteredAt;
 
